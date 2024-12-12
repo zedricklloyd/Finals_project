@@ -272,3 +272,32 @@ def codechallenge6():
 
     else:
         print("Invalid Grades")
+
+ 
+from activity23 import act23
+def factorial(number):
+    """ This function's purpose is to compute/calculate the factorial of any number given """
+    fact = 1
+    for x in range(number, 0, -1):
+        fact *= x
+
+    return fact
+
+print(f"THe factorial of 13 is {factorial(13)}")
+
+def activity19():
+    tuloy = True
+    while tuloy == True:
+        name = input("Enter your name: ")
+        if  name.lower()== "stop":
+            print("Program Terminated")
+            break
+        else:
+            continue
+
+def activity17():
+    col= eval(input("Enter nummber of column --> "))
+    for x in range(1,11):
+        for y in range(1,col+1):
+          print(f"{x} x {y} = {x*y}",end= "\t")
+        print()
