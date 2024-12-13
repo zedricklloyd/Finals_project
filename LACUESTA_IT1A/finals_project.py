@@ -1,11 +1,16 @@
 from activity2 import act2
+from activity4 import act4
+from activity5 import act5
 from activity6 import act6
 from activity7 import act7
+from activity8 import act8
 from activity9 import act9
+from activity10 import act10
 from activity11 import act11
 from activity12 import act12
 from activity13 import act13
 from activity14 import act14
+
 
 def act20():
     import os
