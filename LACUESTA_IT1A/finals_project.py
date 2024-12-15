@@ -1,12 +1,4 @@
 import os
-def body():
-    print(f"\nWelcome to code compilation of Zedrick Lloyd Lacuesta")
-    print(f"BSIT-1A")
-    print(f"\nChoose what action you want to do:")
-    print(f"\n1. Open Activity Folder")  
-    print(f"2. Open Code Challenge Folder")
-    print(f"3. Exit Program")
-
 
 def act1():
     print("Hello World")
@@ -133,7 +125,6 @@ def act14():
     for y in range(0,11):
         print("*", end = " ")
     print()
-act14()
 
 def act15():
     for x in range(0,11):
@@ -369,9 +360,16 @@ def cc8():
         
     print(f"The summation of all provided number is {sum}")
 
+def cc9():
+    for x in range(0,11):
+        print(" ", end= " ")
+    for y in range(0,x):
+        print(" ", end= " ")
+    for z in range(x, 10):
+        print("*", end= " ")
+    print()
 
-
-def codechallenge10():
+def cc10():
     for x in range(1,6):
         for u in range(6,x,-1):
             print(" ",end= " " )
@@ -394,7 +392,122 @@ def codechallenge10():
             print("*", end= " ")
         print()
 
+def cc11():
+    for x in range(1,4):
+        for u in range(6,x,-1):
+            print(" ",end= " " )
 
+        for v in range(x,1,-1):
+            print("*", end= " ")
+
+        for y in range(1,x+1):
+            print("*", end= " ")
+        print()
+
+    for x in range(4,0,-1):
+        for u in range(6,x,-1):
+            print(" ",end= " " )
+
+        for v in range(x,1,-1):
+            print("*", end= " ")
+
+        for y in range(1,x+1):
+            print("*", end= " ")
+        print()
+
+def cc12():
+    for x in range(1,6):
+        for u in range(6,x,-1):
+            print(" ",end= " " )
+
+        for v in range(1,x+1):
+            print("*", end= " ")
+
+        for y in range(1,x+1):
+            print("*", end= " ")
+        print()
+
+    for x in range(4,0,-1):
+        for u in range(5,0,-1):
+            print(" ",end= " " )
+
+        for v in range(6,x,-5):
+            print("*", end= " ")
+
+        for y in range(6,x,-5):
+            print("*", end= " ")
+        print()
+
+def cc13():
+    for x in range(1,6):
+        for u in range(6,x,-1):
+            print(" ",end= " " )
+
+        for v in range(x,1,-1):
+            print(v, end= " ")
+
+        for y in range(1,x+1):
+            print(y, end= " ")
+        print()
+
+    for x in range(4,0,-1):
+        for u in range(6,x,-1):
+            print(" ",end= " " )
+
+        for v in range(x,1,-1):
+            print(v, end= " ")
+
+        for y in range(1,x+1):
+            print(y, end= " ")
+        print()
+
+def cc14():
+    dang = True
+    bilang = 0
+
+    while dang == True:
+        num = eval(input("Write a number:   "))
+
+        if num == 0:
+            print("Loop has terminated")
+            print(f"The sum of all numbers given is {bilang}")
+            break
+            
+        else:
+            bilang += num
+            continue
+
+def cc15():
+    import os
+
+    ting = True
+    nut = 0
+
+    while ting == True:
+        ilan = input("\nDo you wish to create more triangle (yes/no) ? ")
+
+        if ilan.lower() == "no":
+            os.system("cls")
+            print("Program terminated")
+            break
+
+        elif ilan.lower() == "yes":
+            os.system("cls")
+            nut += 1
+            for x in range(1,6):
+                for y in range(1,nut+1):
+                    for z in range(1,x+1):
+                        print("*", end= " ")
+                    for a in range(5,x,-1):
+                        print(" ", end= " ")
+                    print( end= " ")
+                print()
+                continue
+        else:
+            os.system
+            print("\nInvalid input, Please enter 'yes' or 'no' only")
+            continue
+                
 def codechallenge16():
     balance = 0
 
@@ -542,3 +655,54 @@ def denomination():
 
     print("\n Hi" , name , "your deposit exchange in PH denomination are as follow: ")
     print("\n" , n1 ,"-  1000" , "\n" , n2 , "-  500" , "\n" , n3 , "-  200" , "\n" , n4 , "-  100" , "\n" , n5 , "-  50" , "\n" , n6 , "-  20" , "\n" , n7 , "-  10" , "\n" , n8 , "-  5" , "\n" , n9 , "-  1")
+
+isCont = True
+while isCont == True:
+    ask = input("Do you want to open the activities and codechallenge of this user? ")
+
+    if ask.lower() == "yes":
+        print("\nWelcome to code compilation of Zedrick Lloyd Lacuesta")
+        print("BSIT-1A")
+        print("\nChoose what action you want to do:")
+        print("\n1. Open Activity Folder")  
+        print("2. Open Code Challenge Folder")
+        print("3. Exit Program")
+        know = input("Enter your choice number here ----> ")
+        
+        if know == "1":
+            print("\nChoose the activity you want to see:")
+            print("\nA. activity 1")
+            print("B. activity 2")
+            print("C. activity 3")
+            print("D. activity 4")
+            print("E. activity 5")
+            print("F. activity 6")
+            print("G. activity 7")
+            print("H. activity 8")
+            print("I. activity 9")
+            print("J. activity 10")
+            print("K. activity 11")
+            print("L. activity 12")
+            print("M. activity 13")
+            print("N. activity 14")
+            print("O. activity 15")
+            print("P. activity 16")
+            print("Q. activity 17")
+            print("R. activity 18")
+            print("S. activity 19")
+            print("T. activity 20")
+            print("U. activity 21")
+            print("V. activity 22")
+            print("W. activity 23")
+            print("X. activity 24")
+            print("Y. activity 25")
+            
+            show = input("Enter your choice here ---- > ")
+            
+            if show.lower() == "A": act1()
+            
+
+
+    else:
+        break
+    
