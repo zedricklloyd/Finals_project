@@ -1,4 +1,12 @@
 import os
+def menu():
+    print("\nWelcome to code compilation of Zedrick Lloyd Lacuesta")
+    print("BSIT-1A")
+    print("\nChoose what action you want to do:")
+    print("\n1. Open Activity Folder")  
+    print("2. Open Code Challenge Folder")
+    print("3. Open Denomination")
+    print("4. Exit Program")
 
 def act1():
     print("Hello World")
@@ -141,7 +149,7 @@ def act16():
             print("*", end= " ")
         print()
 
-def activity17():
+def act17():
     col= eval(input("Enter nummber of column --> "))
     for x in range(1,11):
         for y in range(1,col+1):
@@ -160,7 +168,7 @@ def act18():
             print( end= " ")
         print()
                
-def activity19():
+def act19():
     tuloy = True
     while tuloy == True:
         name = input("Enter your name: ")
@@ -466,7 +474,7 @@ def cc14():
     bilang = 0
 
     while dang == True:
-        num = eval(input("Write a number:   "))
+        num = eval(input("Write a number(type 0 to stop):   "))
 
         if num == 0:
             print("Loop has terminated")
@@ -508,7 +516,7 @@ def cc15():
             print("\nInvalid input, Please enter 'yes' or 'no' only")
             continue
                 
-def codechallenge16():
+def cc16():
     balance = 0
 
     def create_account(name, initial_deposit = 0):
@@ -658,51 +666,235 @@ def denomination():
 
 isCont = True
 while isCont == True:
-    ask = input("Do you want to open the activities and codechallenge of this user? ")
+    ask = input("Do you want to open the activities and codechallenge of this user(yes/no)? ")
 
     if ask.lower() == "yes":
-        print("\nWelcome to code compilation of Zedrick Lloyd Lacuesta")
-        print("BSIT-1A")
-        print("\nChoose what action you want to do:")
-        print("\n1. Open Activity Folder")  
-        print("2. Open Code Challenge Folder")
-        print("3. Exit Program")
+        menu()
         know = input("Enter your choice number here ----> ")
-        
-        if know == "1":
-            print("\nChoose the activity you want to see:")
-            print("\nA. activity 1")
-            print("B. activity 2")
-            print("C. activity 3")
-            print("D. activity 4")
-            print("E. activity 5")
-            print("F. activity 6")
-            print("G. activity 7")
-            print("H. activity 8")
-            print("I. activity 9")
-            print("J. activity 10")
-            print("K. activity 11")
-            print("L. activity 12")
-            print("M. activity 13")
-            print("N. activity 14")
-            print("O. activity 15")
-            print("P. activity 16")
-            print("Q. activity 17")
-            print("R. activity 18")
-            print("S. activity 19")
-            print("T. activity 20")
-            print("U. activity 21")
-            print("V. activity 22")
-            print("W. activity 23")
-            print("X. activity 24")
-            print("Y. activity 25")
-            
-            show = input("Enter your choice here ---- > ")
-            
-            if show.lower() == "A": act1()
-            
 
+        while True:
+            if know == "1":
+                print("\n==========ACTIVITY MENU===========")
+                print("Choose the activity you want to see:")
+                print("\nA. activity 1")
+                print("B. activity 2")
+                print("C. activity 3")
+                print("D. activity 4")
+                print("E. activity 5")
+                print("F. activity 6")
+                print("G. activity 7")
+                print("H. activity 8")
+                print("I. activity 9")
+                print("J. activity 10")
+                print("K. activity 11")
+                print("L. activity 12")
+                print("M. activity 13")
+                print("N. activity 14")
+                print("O. activity 15")
+                print("P. activity 16")
+                print("Q. activity 17")
+                print("R. activity 18")
+                print("S. activity 19")
+                print("T. activity 20")
+                print("U. activity 21")
+                print("V. activity 22")
+                print("W. activity 23")
+                print("X. activity 24")
+                print("Y. activity 25")
+                print("Z. Return to Main Menu")
+                show = input("Enter your choice here ---- > ")
+                
+                if show.lower() == "a":
+                    act1()
+                    
+                elif show.lower() == "b":
+                    act2()
+
+                # elif show.lower() == "c":
+                #     act3()
+
+                elif show.lower() == "d":
+                    act4()
+
+                elif show.lower() == "e":
+                    act5()
+
+                elif show.lower() == "f":
+                    act6()
+
+                elif show.lower() == "g":
+                    act7()
+
+                elif show.lower() == "h":
+                    act8()
+
+                elif show.lower() == "i":
+                    act9()
+
+                elif show.lower() == "j":
+                    act10()
+
+                elif show.lower() == "k":
+                    act11()
+
+                elif show.lower() == "l":
+                    act12()
+
+                elif show.lower() == "m":
+                    act13()
+
+                elif show.lower() == "n":
+                    act14()
+
+                elif show.lower() == "o":
+                    act15()
+
+                elif show.lower() == "p":
+                    act16()
+
+                elif show.lower() == "q":
+                    act17()
+
+                elif show.lower() == "r":
+                    act18()
+
+                elif show.lower() == "s":
+                    act19()
+
+                elif show.lower() == "t":
+                    act20()
+                
+                elif show.lower() == "u":
+                    act21()
+
+                elif show.lower() == "v":
+                    act22()
+
+                elif show.lower() == "w":
+                    act23()
+
+                elif show.lower() == "x":
+                    act24()
+
+                elif show.lower() == "y":
+                    act25()
+                
+                elif show.lower() == "z":
+                    print("\nRETURNING TO MAIN MENU....")
+                    break
+
+                else:
+                    print("Invalid pick")
+                    continue
+
+                cont = input("\nDo you want to open other activities (yes/no)?")
+
+                if cont.lower() != "yes":
+                    print("\nReturning to Main Menu.....")
+                    break
+
+
+            elif know == "2":
+                print("\n==========CODE CHALLENGE MENU===========")
+                print("Choose the codechallenge you want to see:")
+                print("\nA. Code Challenge 1")
+                print("B. Code Challenge 2")
+                print("C. Code Challenge 3")
+                print("D. Code Challenge 4")
+                print("E. Code Challenge 5")
+                print("F. Code Challenge 6")
+                print("G. Code Challenge 7")
+                print("H. Code Challenge 8")
+                print("I. Code Challenge 9")
+                print("J. Code Challenge 10")
+                print("K. Code Challenge 11")
+                print("L. Code Challenge 12")
+                print("M. Code Challenge 13")
+                print("N. Code Challenge 14")
+                print("O. Code Challenge 15")
+                print("P. Code Challenge 16")
+                print("Q. RETURN TO MAIN MENU")
+                hello = input("Enter your choice here ---- > ")
+
+                if hello.lower() == "a":
+                    cc1()
+
+                elif hello.lower() == "b":
+                    cc2()
+
+                elif hello.lower() == "c":
+                    cc3()
+
+                elif hello.lower() == "d":
+                    cc4()
+
+                elif hello.lower() == "e":
+                    cc5()
+
+                elif hello.lower() == "f":
+                    cc6()
+
+                elif hello.lower() == "g":
+                    cc7()
+
+                elif hello.lower() == "h":
+                    cc8()
+
+                elif hello.lower() == "i":
+                    cc9()
+
+                elif hello.lower() == "j":
+                    cc10()
+
+                elif hello.lower() == "k":
+                    cc11()
+
+                elif hello.lower() == "l":
+                    cc12()
+
+                elif hello.lower() == "m":
+                    cc13()
+
+                elif hello.lower() == "n":
+                    cc14()
+
+                elif hello.lower() == "o":
+                    cc15()
+
+                elif hello.lower() == "p":
+                    cc16()
+
+                elif hello.lower() == "q":
+                    print("\nRETURNING TO MAIN MENU....")
+                    break
+
+                else:
+                    print("Invalid pick")
+                    continue
+
+                hi = input("\nDo you want to open other code challenge (yes/no)?")
+
+                if hi.lower() != "yes":
+                    print("\nReturning to Main Menu.....")
+                    break
+            
+            elif know == "3":
+                print("========DENOMINATION=========")
+                denomination()
+                ya = input("\nDo you want to deposit again (yes/no)? ")
+
+                if ya.lower() != "yes":
+                    print("\nReturning to Main Menu.....")
+                    break
+
+            elif know == "4":
+                print("PROGRAM TERMINATED")
+                break
+    elif ask.lower() == "no":
+        print("PROGRAM TERMINATED")
+        break
 
     else:
-        break
+        print("INVALID PICK")
+        continue
     
