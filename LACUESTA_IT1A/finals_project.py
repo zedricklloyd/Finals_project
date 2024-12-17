@@ -1,7 +1,9 @@
 import os
 def menu():
-    print("\nWelcome to code compilation of Zedrick Lloyd Lacuesta")
-    print("BSIT-1A")
+    print("\t\t\t\t=========================================================================")
+    print("\t\t\t\t\tWelcome to code compilation of Zedrick Lloyd Lacuesta")
+    print("\t\t\t\t\t\t\t\tBSIT-1A")
+    print("\t\t\t\t=========================================================================")
     print("\nChoose what action you want to do:")
     print("\n1. Open Activity Folder")  
     print("2. Open Code Challenge Folder")
@@ -687,7 +689,7 @@ def denomination():
 
 isCont = True
 while isCont == True:
-    ask = input("Do you want to open the activities and codechallenge of this user(yes/no)? ")
+    ask = input("\nDo you want to open the activities and codechallenge of this user(yes/no)? ")
 
     if ask.lower() == "yes":
         menu()
@@ -695,8 +697,10 @@ while isCont == True:
 
         while True:
             if know == "1":
-                print("\n==========ACTIVITY MENU===========")
-                print("Choose the activity you want to see:")
+                print("\t\t\t\t=========================================================================")
+                print("\t\t\t\t\t\t\t\tACTIVITY MENU")
+                print("\t\t\t\t\t\t\t\b\bChoose the activity you want to see:")
+                print("\t\t\t\t=========================================================================")
                 print("\nA. activity 1")
                 print("B. activity 2")
                 print("C. activity 3")
@@ -816,8 +820,10 @@ while isCont == True:
 
 
             elif know == "2":
-                print("\n==========CODE CHALLENGE MENU===========")
-                print("Choose the codechallenge you want to see:")
+                print("\t\t\t\t=========================================================================")
+                print("\t\t\t\t\t\t\t\t\b\b\b\bCODE CHALLENGE MENU")
+                print("\t\t\t\t\t\tChoose the codechallenge you want to see:")
+                print("\t\t\t\t=========================================================================")
                 print("\nA. Code Challenge 1")
                 print("B. Code Challenge 2")
                 print("C. Code Challenge 3")
@@ -893,7 +899,7 @@ while isCont == True:
                     print("Invalid pick")
                     continue
 
-                hi = input("\nDo you want to open other code challenge (yes/no)?")
+                hi = input("\nDo you want to open other code challenges (yes/no)?")
 
                 if hi.lower() != "yes":
                     print("\nReturning to Main Menu.....")
@@ -912,10 +918,12 @@ while isCont == True:
                 print("PROGRAM TERMINATED")
                 break
     elif ask.lower() == "no":
-        print("PROGRAM TERMINATED")
+        print("\t\t\t\t=========================================================================")
+        print("\t\t\t\t\t\t\tPROGRAM TERMINATED")
+        print("\t\t\t\t\t\t\t\b\b\b\b\bTHANKYOU FOR USING THE SYSTEM!")
+        print("\t\t\t\t=========================================================================")
         break
 
     else:
         print("INVALID PICK")
         continue
-    
